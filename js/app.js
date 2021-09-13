@@ -17,8 +17,8 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `<div class="single-product">
-      <div>
-    <img class="product-image" src=${image}></img>
+      <div style="background-color:#fff;border-radius: 10px 10px 0px 0px;padding: 10px 0px;">
+        <img class="product-image" src=${image}></img>
       </div>
       <h3>${title}</h3>
       <p style="text-transform: capitalize;">Category: ${product.category}</p>
