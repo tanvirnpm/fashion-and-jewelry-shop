@@ -33,7 +33,7 @@
           <div class="card card-default">
             <div class="card-body" style="display: flex;">
                 <div style="width:40%;padding: 0 20px;">
-                  <img id="product_image" src="${image}" class="img-responsive">
+                  <img id="product_image" src="https://flevix.com/wp-content/uploads/2020/01/Preloader.gif" class="img-responsive">
                 </div>
                 <div style="width:60%">
                   <h4><span id="product_title"></span></h4>
@@ -54,7 +54,7 @@
     <!-- modal close -->
     <div class="search-field">
       <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
+        <input id="input-field" placeholder="Search by product name" class="search-field" type="text" />
         <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
           Search
@@ -106,7 +106,7 @@
               </tr>
               <tr>
                 <th scope="row">Total</th>
-                <td colspan="2">$ <span id="total">0</span></td>
+                <td colspan="2">$ <span id="total">20</span></td>
                 <td></td>
               </tr>
             </tbody>
@@ -126,7 +126,6 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="products.json"></script>
   <script src="./js/app.js"></script>
 </body>
 

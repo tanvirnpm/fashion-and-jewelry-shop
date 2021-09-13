@@ -13,14 +13,15 @@ const showProducts = (products) => {
   for (const product of allProducts) {
     // resolved image Instead of images
     const image = product.image;
+    const title = product.title.slice(0,15)+'...';
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <h3>${product.title}</h3>
-      <p>Category: ${product.category}</p>
+      <h3>${title}</h3>
+      <p style="text-transform: capitalize;">Category: ${product.category}</p>
       <h4>Rating: ${product.rating.rate}/${product.rating.count}</h4>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">Add to cart</button>
